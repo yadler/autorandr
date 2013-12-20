@@ -46,7 +46,6 @@ class DisplayManager:
                 print 'display got removed: ' + display
                 self.connected_displays.remove(display)
 
-
     def get_connected_displays(self):
         process = subprocess.Popen("xrandr | grep ' connected' | cut -f1 -d' '", shell = True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         out, err = process.communicate()
