@@ -31,3 +31,7 @@ class AutoRandr:
 
 if __name__ == '__main__':
     AutoRandr()
+
+
+    ## todo: make autorandr a possible solution for
+    # http://askubuntu.com/questions/73804/wrong-login-screen-resolution

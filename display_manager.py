@@ -8,8 +8,6 @@ import pynotify
 from pyudev import Context, Monitor, MonitorObserver
 
 class DisplayManager:
-    INTERNAL_DISPLAYS = ['LVDS']
-    EXTERNAL_DISPLAYS = ['DP', 'VGA', 'DVI', 'HDMI', 'TV', 'S-video']
     connected_displays = []
 
     def __init__(self):
@@ -53,5 +51,5 @@ class DisplayManager:
         return display_list
 
     def send_notification(self, title, message):
-        notice = pynotify.Notification(title, message, os.path.abspath('video-display.png'))
+        notice = pynotify.Notification(title, message, os.path.abspath('img/video-display.png'))
         notice.show()
