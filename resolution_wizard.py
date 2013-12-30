@@ -10,5 +10,11 @@ class ResolutionWizard:
             for connected_display in self.display_list:
                 if connected_display.startswith(internal_display):
                     return connected_display
+
+        for external_display in self.EXTERNAL_DISPLAYS:
+            for connected_display in self.display_list:
+                if connected_display.startswith(external_display):
+                    return connected_display
+                    
         return None
 
